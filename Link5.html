@@ -1,0 +1,132 @@
+<html>
+<head> 
+	<style>
+
+*{
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+	background: #ab0006;
+}
+.nav ul{ 
+	list-style-type: none;
+}	
+.nav ul li{
+float:left;
+width:100px; 
+text-align:center; 
+margin-left:5px;
+}
+.nav ul li ul li{
+ margin-left: 0px;
+}
+.nav ul ul{ 
+display:none;
+}
+.nav ul li:hover > ul{
+display:block;
+}
+.nav ul li:hover{
+ background: #ab0006;
+ color: #ab0006; 
+ font-weight:bold;
+}
+.nav ul li ul li:hover{
+ background: #ab0006; 
+ color: #ab0006;
+}
+.container {
+  display: grid;
+  height: 300px;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 0.4fr 1fr 0.4fr;
+  grid-template-areas:  
+  "Header Header Header"
+  "S1 Main S2"
+  "Footer Footer Footer"
+
+}
+
+.header {
+    Background-color: #ab0006;
+    grid-area: Header;
+	align: center;
+}
+
+.content-1 {
+    Background-color: #ab0006;
+    grid-area: S1;
+}
+
+.content-2 {
+    background-color: #ab0006;
+    grid-area: Main;
+}
+
+.content-3 {
+    background-color: #ab0006;
+    grid-area: S2;
+}
+
+.footer {
+    background-color: #ab0006;
+    grid-area: Footer;
+}
+
+@media screen and (max-width: 600px) {
+
+.container {
+  display: grid; 
+  grid-template-columns: 2.2fr; 
+  grid-template-rows: 0.4fr 0.7fr 1fr 0.7fr 0.4fr; 
+  grid-template-areas: 
+    "Header"
+    "S1"
+    "Main"
+    "S2"
+    "Footer"; 
+}
+
+</style>
+
+<title>PT4-1_Necesario</title>
+  </head>
+   <body> 
+<font color=white face="Open Sans">
+   <div class="container">
+<div align="center" class="header">
+  <div class=nav>
+<ul>
+           <li align=center><a style="font-weight:bold" href=index.html>HOME</a></li>
+		   <li align=center><a style="font-weight:bold" href=HOME.html>Me</a></li>
+           <li align=center><a style="font-weight:bold" href=Link1.html>Favorite Games</a></li> 
+           <li align=center><a style="font-weight:bold" href=Link2.html>Favorite Cars</a></li>
+           <li align=center><a style="font-weight:bold" href=Link3.html>Favorite Movies</a></li> 
+           <li align=center><a style="font-weight:bold" href=Link4.html>Favorite Musicians</a></li>
+		   <li align=center><a style="font-weight:bold" href=Link5.html>Favorite Shows</a></li>  
+       </ul> 
+   </div> 
+</div> 
+<div align="center" class="content-1">
+<h2> Brooklyn 99</h2>
+<img src=b99.jpg height= 500px>
+<h1> Brooklyn 99 is a comedy show. A show is set in a police station in Brooklyn. It shows many funny moments.</h1>
+</div>
+<div align="center" class="content-2">
+<h2> Moon Knight</h2>
+<img src=peak.jpg height= 500px>
+<h1> Marvel Superhero show that shows you the main character Marc, Steven, and Jake. It is an amazing show that gives you action and mystery in every episode.</h1>
+</div>
+<div align="center" class="content-3">
+<h2> The Punisher</h2>
+<img src=punisher.jpeg height= 500px>
+<h1> Netflix Marvel Show. My favorite hero on this list. It shows you Ex-Marine Frank Castle who has lost his family, seeking revenge and trying to kill the people that killed his family.</h1>
+</div>
+<div align="center" class="footer">
+<h2> Formula 1 Drive To Survive</h2>
+<img src=f1.jpg height= 500px>
+<h1> It shows the world of Formula 1 in a Drama like scenes. It shows the insides and the outsides of the Formula 1 racers, bosses, and teams.</h1>
+</div>
+</div>
+</body> 
+</html>
